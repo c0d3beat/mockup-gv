@@ -3,7 +3,8 @@ $(function() {
     items: 1,
     loop: true,
     autoplay: true,
-    dots: true
+    dots: true,
+    lazyLoad: true
   });
 
 });
