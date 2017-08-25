@@ -1,0 +1,35 @@
+body {
+  background: #F0F0F0;
+}
+body > .container {
+  padding-top: 65px;
+}
+.ui.grid {
+  margin-right: 0 !important;
+}
+.ui.grid > .row > .column {
+  padding-right: 0;
+}
+.ui.message {
+  margin-left: -28px;
+  margin-right: -28px;
+  border-radius: 0;
+}
+.toast-top-full-width {
+  top: 60px;
+}
+.toast-success {
+  background-color: #00B5AD;
+}
+#toast-container > div:hover {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#toast-container > div {
+  border-radius: 0;
+}
+.new {
+  background: #00B5AD !important;
+  color: #ffffff !important;
+}

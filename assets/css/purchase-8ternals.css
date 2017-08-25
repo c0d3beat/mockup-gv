@@ -1,0 +1,10 @@
+body {
+  background: #F0F0F0;
+}
+body > .container {
+  padding-top: 50px;
+}
+.ui.styled.accordion,
+.ui.styled.accordion .accordion {
+  border-radius: 0;
+}

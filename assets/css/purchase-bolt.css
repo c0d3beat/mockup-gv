@@ -1,0 +1,12 @@
+body {
+  background: #F0F0F0;
+}
+body > .container {
+  padding-top: 65px;
+}
+.ui.grid {
+  margin-right: 0 !important;
+}
+.ui.grid > .row > .column {
+  padding-right: 0;
+}

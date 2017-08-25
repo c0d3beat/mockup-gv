@@ -1,0 +1,23 @@
+.ui.grid > .row:first-child .ui.container {
+  padding-top: 15px;
+}
+.ui.raised.card {
+  background-image: url("../img/card.jpeg");
+  background-size: cover;
+  background-color: #56595E;
+  border-radius: 15px;
+  padding: 15px;
+}
+.ui.raised.card .content .header,
+.ui.raised.card .content .description {
+  color: #FFFFFF;
+}
+.ui.raised.card .content .meta {
+  color: #F0F0F0;
+}
+.ui.raised.card .content .row {
+  padding-top: 70px;
+}
+.ui.raised.card .content .row a {
+  color: #FFFFFF;
+}

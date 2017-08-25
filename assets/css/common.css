@@ -1,0 +1,48 @@
+body {
+  background: #F0F0F0;
+}
+.ui.fixed.menu+.ui.grid {
+  padding-top: 2.6rem;
+}
+.ui.grid {
+  margin-right: 0 !important;
+}
+.pusher {
+  margin-bottom: 80px;
+}
+.ui.grid > .row > .column {
+  padding-right: 0;
+}
+div.pushable {
+  overflow: visible;
+}
+.ui.bottom.menu > .item {
+  color: #7c7c7c;
+}
+.ui.bottom.menu > .active.item {
+  color: #2185D0;
+}
+.ui.bottom.menu > .item:hover {
+  color: #2185D0;
+}
+.ui.four.item.labeled.icon.menu span {
+  font-size: 10px;
+}
+.ui.bottom.fixed.menu span {
+  font-size: 12px;
+}
+.ui.floating.label {
+  top: 1em;
+  margin: 0em 0em 0em -3em !important;
+}
+.ui.menu {
+  border-radius: 0 !important;
+}
+.ui.segment {
+  border-radius: 0 !important;
+}
+.ui.top.attached.menu span,
+.ui.bottom.attached.menu span {
+  font-size: 10px;
+  color: #000;
+}

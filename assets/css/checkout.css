@@ -1,0 +1,15 @@
+body {
+  background: #F0F0F0;
+}
+body > .container {
+  padding-top: 65px;
+}
+.ui.grid {
+  margin-right: 0 !important;
+}
+.ui.grid > .row > .column {
+  padding-right: 0;
+}
+.ui.warning.message {
+  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset, 0px 2px 4px 0px rgba(34, 36, 38, 0.12), 0px 2px 10px 0px rgba(34, 36, 38, 0.15);
+}
