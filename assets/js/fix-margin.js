@@ -4,7 +4,8 @@ $(function() {
   var topMenuHeight = $(".ui.top.fixed.menu").height();
   var bottomMenuHeight = $(".ui.bottom.fixed.menu").height();
   var availableHeight = windowHeight - (topMenuHeight + bottomMenuHeight);
-  if (availableHeight > (contentHeight + 10)) {
-    $("div.pusher").css("margin-bottom", 0);
+  console.log("available: " + availableHeight + ", " + "content: " + contentHeight);
+  if ((availableHeight-100) > (contentHeight)) {
+    $("div.pusher").css("padding-bottom", 0);
   }
 });

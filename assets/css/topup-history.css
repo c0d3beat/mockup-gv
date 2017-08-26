@@ -1,0 +1,20 @@
+body {
+  background: #F0F0F0;
+}
+body > .container {
+  padding-top: 50px;
+}
+.ui.grid {
+  margin-right: 0 !important;
+}
+.ui.grid > .row > .column {
+  padding-right: 0;
+}
+.ui.segment {
+  border-radius: 0;
+  box-shadow: none;
+  border: none
+}
+div.container {
+  background: #FFFFFF;
+}
