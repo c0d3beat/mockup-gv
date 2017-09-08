@@ -1,0 +1,15 @@
+body {
+  background: #F0F0F0;
+}
+body > .container {
+  padding-top: 50px;
+}
+.ui.grid {
+  margin-right: 0 !important;
+}
+.ui.grid > .row {
+  padding-bottom: 0;
+}
+.ui.grid > .row > .column {
+  padding-right: 0;
+}

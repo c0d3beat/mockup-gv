@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>GudangVoucher</title>
+
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!-- CSS - START -->
+  <!-- Semantic UI -->
+  <link rel="stylesheet" href="plugins/semantic/semantic.min.css" type="text/css">
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="assets/css/bca-klikpay.css" type="text/css">
+  <!-- CSS - END -->
+
+  <!-- JS START -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="plugins/jquery/jquery-3.2.1.min.js"></script>
+  <!-- Semantic UI -->
+  <script type="text/javascript" src="plugins/semantic/semantic.min.js"></script>
+  <!-- Page Script -->
+  <script type="text/javascript" src="assets/js/bca-klikpay.js"></script>
+  <!-- JS - END -->
+</head>
+<body>
+  <!-- Top menu -->
+  <div class="ui top fixed borderless blue inverted grid menu">
+    <div class="three wide left floated column">
+      <div class="vertically fitted item">
+        <a href="topup-account.html">
+          <i class="large arrow left icon"></i>
+        </a>
+      </div>
+    </div>
+    <div class="eight wide center aligned column">
+      <div class="ui center aligned grid">
+        <div class="item">
+          <h3>BCA KlikPay</h3>
+        </div>
+      </div>
+    </div>
+    <div class="three wide right floated column">
+    </div>
+  </div>
+
+  <!-- Page container -->
+  <div class="container">
+    <div class="ui grid">
+      <div class="row">
+        <div class="sixteen wide column">
+          <div class="ui segment">
+            <form action="topup-history.html" class="ui form">
+              <h4 class="ui dividing header">Nominal</h4>
+              <div class="required field">
+                <label>Jumlah (Rp.)</label>
+                <input type="number" name="amount" id="amount" placeholder="Jumlah">
+              </div>
+              <div class="field">
+                <label>Tipe pembayaran</label>
+                <select name="tipe" class="ui dropdown">
+                  <option value="full" selected>Full Payment</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Biaya transaksi (Rp.)</label>
+                <input type="number" name="fee" id="fee" value="4000" readonly>
+              </div>
+              <div class="field">
+                <label>Total transaksi (Rp.)</label>
+                <input type="number" name="total" id="total" readonly>
+              </div>
+              <button class="ui basic blue fluid button">Lanjutkan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

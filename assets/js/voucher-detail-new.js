@@ -17,7 +17,7 @@ $(function() {
     "hideMethod": "fadeOut"
   };
   toastr["success"]("Penerbitan voucer belanja berhasil!");
-  
+
   var $dimmner = $(".ui.dimmer");
   $dimmner.dimmer({
     opacity: 0.9

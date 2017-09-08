@@ -30,9 +30,16 @@
   bottom: 10px;
   right: 20px;
 }
-.ui.grid > .row {
+.ui.grid > .row:not(:first-child) {
   padding-top: 0;
 }
-.ui.grid > .row:first-child {
+.ui.grid > .row:first-child .ui.basic.segment {
+  padding: 0 !important;
+}
+.ui.grid > .row:first-child input[type=text] {
+  border-radius: 0;
+}
+.ui.grid > .row:first-child,
+.ui.grid > .row:nth-child(2) {
   padding-bottom: 0;
 }
