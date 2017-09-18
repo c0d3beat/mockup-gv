@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <title>GudangVoucher</title>
+
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!-- CSS - START -->
+  <!-- Semantic UI -->
+  <link rel="stylesheet" href="plugins/semantic/semantic.min.css" type="text/css">
+  <!-- Page CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/signup.css" type="text/css">
+  <!-- CSS - END -->
+
+  <!-- JS - START -->
+  <!-- Jquery -->
+  <script type="text/javascript" src="plugins/jquery/jquery-3.2.1.min.js"></script>
+  <!-- Semantic UI -->
+  <script type="text/javascript" src="plugins/semantic/semantic.min.js"></script>
+  <!-- App JS -->
+  <script type="text/javascript" src="assets/js/signup.js"></script>
+  <!-- JS - END -->
+</head>
+<body>
+<div class="page">
+  <!-- Top menu -->
+  <div class="ui top fixed borderless blue inverted grid menu">
+    <div class="three wide left floated column">
+      <div class="vertically fitted item">
+        <a href="login.html">
+          <i class="large arrow left icon"></i>
+        </a>
+      </div>
+    </div>
+    <div class="eight wide center aligned column">
+      <div class="ui center aligned grid">
+        <div class="item">
+        </div>
+      </div>
+    </div>
+    <div class="three wide right floated column">
+    </div>
+  </div>
+
+  <div class="ui container">
+    <div class="ui fluid card">
+      <div class="content">
+        <h4 class="ui sub header">Buat akun baru</h4>
+      </div>
+      <div class="content">
+        <form action="account-created.html" class="ui mini form">
+          <h4 class="ui dividing header">Login data</h4>
+          <div class="required field">
+            <label>Username</label>
+            <input type="text" name="username" id="username" placeholder="Username">
+          </div>
+          <div class="required field">
+            <label>Password</label>
+            <input type="password" name="password" id="password" placeholder="Password">
+          </div>
+          <div class="required field">
+            <label>Konfirmasi password</label>
+            <input type="password" name="password_again" id="password_again" placeholder="Konfirmasi password">
+          </div>
+          <h4 class="ui dividing header">Profil anggota</h4>
+          <div class="required field">
+            <label>Nama lengkap</label>
+            <input type="text" name="name" id="name" placeholder="Nama lengkap">
+          </div>
+          <div class="field">
+            <label>Nomor ponsel</label>
+            <input type="text" name="phone" id="phone" placeholder="Ponsel (misal 628111234567)">
+          </div>
+          <div class="required field">
+            <label>Alamat email</label>
+            <input type="text" name="email" id="email" placeholder="Alamat email">
+          </div>
+          <button class="ui blue fluid button">Buat akun</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

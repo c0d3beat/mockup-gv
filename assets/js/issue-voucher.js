@@ -18,7 +18,14 @@ $(function() {
 
   $(".ui.form").form({
     fields: {
-      amount: "empty"
+      amount: "empty",
+      validity: "empty"
     }
+  });
+
+  $('.ui.message').find("a").on('click', function() {
+    $('.ui.modal').modal({
+      blurring: true
+    }).modal('show');
   });
 });

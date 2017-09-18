@@ -18,7 +18,8 @@ $(function() {
 
   $(".ui.form").form({
     fields: {
-      amount: "empty"
+      amount: "empty",
+      phone: "empty"
     }
   });
 });

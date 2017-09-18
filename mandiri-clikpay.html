@@ -13,7 +13,7 @@
   <!-- Semantic UI -->
   <link rel="stylesheet" href="plugins/semantic/semantic.min.css" type="text/css">
   <!-- Page CSS -->
-  <link rel="stylesheet" href="assets/css/bca-klikpay.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/mandiri-clickpay.css" type="text/css">
   <!-- CSS - END -->
 
   <!-- JS START -->
@@ -21,8 +21,10 @@
   <script type="text/javascript" src="plugins/jquery/jquery-3.2.1.min.js"></script>
   <!-- Semantic UI -->
   <script type="text/javascript" src="plugins/semantic/semantic.min.js"></script>
+  <!-- Masked Input -->
+  <script type="text/javascript" src="plugins/jquery-maskedinput/jquery.maskedinput.min.js"></script>
   <!-- Page Script -->
-  <script type="text/javascript" src="assets/js/bca-klikpay.js"></script>
+  <script type="text/javascript" src="assets/js/mandiri-clickpay.js"></script>
   <!-- JS - END -->
 </head>
 <body>
@@ -38,7 +40,7 @@
     <div class="eight wide center aligned column">
       <div class="ui center aligned grid">
         <div class="item">
-          <h3>BCA KlikPay</h3>
+          <h3>Mandiri clickpay</h3>
         </div>
       </div>
     </div>
@@ -59,18 +61,33 @@
                 <input type="number" name="amount" id="amount" placeholder="Jumlah">
               </div>
               <div class="field">
-                <label>Tipe pembayaran</label>
-                <select name="tipe" class="ui dropdown">
-                  <option value="full" selected>Full Payment</option>
-                </select>
-              </div>
-              <div class="field">
                 <label>Biaya transaksi (Rp.)</label>
-                <input type="number" name="fee" id="fee" value="4000" readonly>
+                <input type="number" name="fee" id="fee" value="3850" readonly>
               </div>
               <div class="field">
                 <label>Total transaksi (Rp.)</label>
                 <input type="number" name="total" id="total" value="0" readonly>
+              </div>
+              <div class="required field">
+                <label>Nomor Kartu Debit</label>
+                <input type="text" name="debitcard" id="debitcard" placeholder="16 digit kartu debit">
+              </div>
+              <h4 class="ui dividing header">Token Mandiri</h4>
+              <div class="field">
+                <label>Input 1</label>
+                <input type="text" name="input1" id="input1" readonly>
+              </div>
+              <div class="field">
+                <label>Input 2</label>
+                <input type="text" name="input2" id="input2" readonly>
+              </div>
+              <div class="field">
+                <label>Input 3</label>
+                <input type="text" name="input3" id="input3" value="888432946620" readonly>
+              </div>
+              <div class="required field">
+                <label>Respon Token</label>
+                <input type="number" name="token" id="token">
               </div>
               <button class="ui basic blue fluid button">Lanjutkan</button>
             </form>

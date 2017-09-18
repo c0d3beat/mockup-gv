@@ -13,7 +13,7 @@
   <!-- Semantic UI -->
   <link rel="stylesheet" href="plugins/semantic/semantic.min.css" type="text/css">
   <!-- Page CSS -->
-  <link rel="stylesheet" href="assets/css/bca-klikpay.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/tcash.css" type="text/css">
   <!-- CSS - END -->
 
   <!-- JS START -->
@@ -22,7 +22,7 @@
   <!-- Semantic UI -->
   <script type="text/javascript" src="plugins/semantic/semantic.min.js"></script>
   <!-- Page Script -->
-  <script type="text/javascript" src="assets/js/bca-klikpay.js"></script>
+  <script type="text/javascript" src="assets/js/tcash.js"></script>
   <!-- JS - END -->
 </head>
 <body>
@@ -38,7 +38,7 @@
     <div class="eight wide center aligned column">
       <div class="ui center aligned grid">
         <div class="item">
-          <h3>BCA KlikPay</h3>
+          <h3>Telkomsel t-cash</h3>
         </div>
       </div>
     </div>
@@ -53,24 +53,22 @@
         <div class="sixteen wide column">
           <div class="ui segment">
             <form action="topup-history.html" class="ui form">
-              <h4 class="ui dividing header">Nominal</h4>
+              <h4 class="ui dividing header">Detil transaksi</h4>
               <div class="required field">
                 <label>Jumlah (Rp.)</label>
                 <input type="number" name="amount" id="amount" placeholder="Jumlah">
               </div>
               <div class="field">
-                <label>Tipe pembayaran</label>
-                <select name="tipe" class="ui dropdown">
-                  <option value="full" selected>Full Payment</option>
-                </select>
-              </div>
-              <div class="field">
                 <label>Biaya transaksi (Rp.)</label>
-                <input type="number" name="fee" id="fee" value="4000" readonly>
+                <input type="number" name="fee" id="fee" value="2200" readonly>
               </div>
               <div class="field">
                 <label>Total transaksi (Rp.)</label>
                 <input type="number" name="total" id="total" value="0" readonly>
+              </div>
+              <div class="required field">
+                <label>Nomor ponsel</label>
+                <input type="number" name="phone" id="phone" placeholder="Nomor ponsel">
               </div>
               <button class="ui basic blue fluid button">Lanjutkan</button>
             </form>

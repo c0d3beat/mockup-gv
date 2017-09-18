@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>GudangVoucher</title>
+
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <!-- CSS - START -->
+  <!-- Semantic UI -->
+  <link rel="stylesheet" href="plugins/semantic/semantic.min.css" type="text/css">
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="assets/css/issue-voucher.css" type="text/css">
+  <!-- CSS - END -->
+
+  <!-- JS START -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="plugins/jquery/jquery-3.2.1.min.js"></script>
+  <!-- Semantic UI -->
+  <script type="text/javascript" src="plugins/semantic/semantic.min.js"></script>
+  <!-- Page Script -->
+  <script type="text/javascript" src="assets/js/issue-voucher.js"></script>
+  <!-- JS - END -->
+</head>
+<body>
+  <!-- Top menu -->
+  <div class="ui top fixed borderless blue inverted grid menu">
+    <div class="three wide left floated column">
+      <div class="vertically fitted item">
+        <a href="index.html">
+          <i class="large arrow left icon"></i>
+        </a>
+      </div>
+    </div>
+    <div class="eight wide center aligned column">
+      <div class="ui center aligned grid">
+        <div class="item">
+          <h3>Issue Voucher</h3>
+        </div>
+      </div>
+    </div>
+    <div class="three wide right floated column">
+    </div>
+  </div>
+
+  <!-- Page container -->
+  <div class="container">
+    <div class="ui grid">
+      <div class="row">
+        <div class="sixteen wide column">
+          <div class="ui segment">
+            <form action="voucher-detail-new.html" class="ui form">
+              <h4 class="ui dividing header">Detil voucher</h4>
+              <div class="required field">
+                <label>Jumlah (Rp.)</label>
+                <input type="number" name="amount" id="amount" placeholder="Minimal Rp. 2.500,-">
+              </div>
+              <div class="field">
+                <label>Masa berlaku</label>
+                <select name="validity" id="validity" class="ui dropdown">
+                  <option value="" selected>--pilih masa berlaku--</option>
+                  <option value="2">2 menit</option>
+                  <option value="5">5 menit</option>
+                  <option value="10">10 menit</option>
+                  <option value="60">1 jam</option>
+                  <option value="1440">24 jam</option>
+                </select>
+              </div>
+              <div class="ui message">
+                <p>Dengan menekan tombol <strong>Issue</strong> berarti Anda telah menyetujui <a>syarat & ketentuan Voucher Uang Elektronik</a></p>
+              </div>
+              <button class="ui basic blue fluid button">Issue</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">Syarat dan ketentuan Voucher Uang Elektronik</div>
+    <div class="scrolling content">
+      <ol class="ui list">
+        <li>
+          User menerbitkan kode voucher Uang Elektronik dengan nominal dan masa berlaku yang ditentukan. Selanjutnya user yang menerbitkan voucher Uang Elektronik disebut Penerbit.
+        </li>
+        <li>
+          Penerbit setuju untuk mengurangi saldo penerbit dengan nominal yang ditentukan pada saat voucher Uang Elektronik diterbitkan.
+        </li>
+        <li>
+          Penggunaan kode voucher Uang Elektronik adalah untuk pembelian atau pembayaran kepada merchant/pedagang.
+        </li>
+        <li>
+          Penerbit bertanggung jawab terhadap keamanan kode voucher Uang Elektronik, menyimpan, serta memastikan bahwa pedagang/merchant telah melakukan redeem terhadap voucher tersebut.
+        </li>
+        <li>
+          Voucher Uang Elektronik yang telah diterbitkan dapat dibatalkan sewaktu-waktu oleh penerbit selama belum dilakukan redeem oleh pedagang/merchant.
+        </li>
+        <li>
+          Kode voucher Uang Elektronik yang telah dibatalkan oleh penerbit tidak dapat digunakan lagi dan nominal yang tercantum dalam voucher tersebut akan dikembalikan sebagai saldo penerbit.
+        </li>
+        <li>
+          Penerbit setuju bahwa pada saat voucher Uang Elektronik ini diredeem, penerbit tidak mendapatkan tanda bukti, struk, tanda terima dalam bentuk cetak kertas namun penerbit dapat melihat status voucher tersebut di Histori Voucher Uang Elektronik.
+        </li>
+        <li>
+          Minimal nominal voucher Uang Elektronik adalah Rp. 2.500.
+        </li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
